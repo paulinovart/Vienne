@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 @font-face {
@@ -112,6 +113,11 @@ img {
 .website-content-wrapper {
     width: 70%;
     margin: 0 auto;
+}
+
+.burger{
+    color: #E39FAC;
+    font-size: 1vw;
 }
 
 h1 {
@@ -268,4 +274,29 @@ h3 {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     position: absolute;
+}
+
+footer{
+    margin-top: 10vw;
+   justify-content: center;
+   display: flex;
+}
+
+ul{
+    width: 50%;
+    max-width: 250px;
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    gap: 40px;
+    background-color:rgba(226, 191, 166, 0.3);
+    border-radius: 12vw;
+    
+}
+
+#paws{
+    margin-bottom: 10vw;
 }
