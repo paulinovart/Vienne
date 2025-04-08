@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Tuto text anim scroll</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="#">Vienne</a>
+                <div class="logo-revealer"></div>
+            </div>
+
+        </div>
+
+        <div class="header">
+            <div class="letter">
+                <img src="images/svg/lettres-r_V.svg" alt="">
+            </div>
+            <div class="letter">
+                <img src="images/svg/lettres-r_I.svg" alt="">
+            </div>
+            <div class="letter">
+                <img src="images/svg/lettres-r_E.svg" alt="">
+            </div>
+            <div class="letter">
+                <img src="images/svg/lettres-r_N.svg" alt="">
+            </div>
+            <div class="letter">
+                <img src="images/svg/lettres-r_N.svg" alt="">
+
+            </div>
+            <div class="letter">
+                <img src="images/svg/lettres-r_E.svg" alt="">
+            </div>
+
+        </div>
+        <div class="website-content">
+            <div class="website-content-wrapper">
+                <h1>Élève chien guide de 6 mois ｜ Labrador X Golden Retriever</h1>
+
+                <div class="img">
+                    <img src="images/vienne.JPG" alt="">
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero commodi qui possimus quia asperiores doloribus beatae
+                    necessitatibus ullam, est veniam harum eaque totam quam nisi,
+                    nihil quasi vel ratione unde?
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facere earum veniam repudiandae suscipit non facilis culpa
+                    ullam asperiores reprehenderit quis, nulla modi. Reprehenderit
+                    qui laboriosam, numquam assumenda esse animi est.
+                </p>
+                <div class="grid_1">
+                    <div class="card ">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/1.jpg"></div>
+                            <div class="back un"><h2>Arrivée de Vienne</h2><h3>06/12/24</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/4.jpg"></div>
+                            <div class="back  deux"><h2>Vienne fait du vélo</h2><h3>06/01/25</h3></div>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/7.jpg"></div>
+                            <div class="back un"><h2>Premier calin</h2><h3>06/12/24</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/8.jpg"></div>
+                            <div class="back  deux"><h2>Zzzz</h2><h3>07/12/24</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/10.jpg"></div>
+                            <div class="back  deux"><h2>Première fois à Gobelins</h2><h3>27/03/25</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/22.JPG"></div>
+                            <div class="back  un"><h2>Calin avant de partir</h2><h3>25/03/25</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/12.jpg"></div>
+                            <div class="back  deux"><h2>Photobo-oth</h2><h3>27/03/25</h3></div>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/30.jpg"></div>
+                            <div class="back un"><h2>Deux superstars</h2><h3>22/12/25</h3></div>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/25.jpg"></div>
+                            <div class="back un"><h2>Assis</h2><h3>22/12/25</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/15.JPG"></div>
+                            <div class="back  deux"><h2>Jardin des plantes</h2><h3>27/03/25</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/2.jpg"></div>
+                            <div class="back un"><h2>Dur travail</h2><h3>19/12/24</h3></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front"><img class="photo" src="images/28.JPG"></div>
+                            <div class="back  deux"><h2>Séance photo</h2><h3>22/12/25</h3></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="website-placeholder"></div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+            <script src="script.js"></script>
+            <script>
+                const header = document.querySelector(".header");
+                const letters = document.querySelectorAll(".letter");
+                const logo = document.querySelector(".logo a");
+                const websiteContent = document.querySelector(".website-content");
+
+                let lastScroll = 0;
+                const sectionHeight = 150; //la distance necessaire pour changer de section
+
+                window.addEventListener("scroll", () => {
+                    const scrollY = window.scrollY;
+                    if (scrollY < 900) {
+                        websiteContent.style.position = "fixed";
+                        websiteContent.style.top = "0";
+                    }
+                    else {
+                        websiteContent.style.position = "absolute";
+                        websiteContent.style.top = `${900}px`;
+                    }
+
+                    const orderPairs = [
+
+                        [2, 3],
+                        [1, 4],
+                        [0, 5],
+                    ];
+
+                    orderPairs.forEach((pair, orderIndex) => {
+                        const startScroll = sectionHeight * orderIndex;
+
+                        if (scrollY >= startScroll) {
+                            const moveFactor = Math.min(
+                                1,
+                                (scrollY - startScroll) / sectionHeight
+                            );
+                            const translateY = -moveFactor * header.offsetHeight;
+
+                            pair.forEach((idx) => {
+                                const letter = letters[idx];
+                                gsap.to(letter, {
+                                    y: translateY,
+                                    zIndex: 1 - moveFactor,
+                                });
+                            });
+
+                        }
+                        else {
+                            pair.forEach((idx) => {
+                                const letter = letters[idx];
+                                gsap.to(letter, {
+                                    y: 0,
+                                    zIndex: 1,
+                                });
+                            });
+                        }
+                    });
+
+                    const buffer = 50;
+
+                    if (scrollY >= orderPairs.length * sectionHeight + buffer && !gsap.isTweening(logo)) {
+                        gsap.to(logo, {
+                            top: "0px",
+                            ease: "power1.out",
+                            overwrite: true
+                        })
+
+                        gsap.to(".logo-revealer", {
+                            scaleY: 0,
+                            overwrite: true,
+
+                        });
+
+                    }
+                    else if (
+                        scrollY <= (orderPairs.lenght - 1) * sectionHeight && !gsap.isTweening(logo)
+                    ) {
+                        gsap.to(logo, {
+                            top: "20px",
+                            ease: "power1.out",
+                            overwrite: true
+                        });
+
+                        gsap.to(".logo-revealer", {
+                            scaleY: 1,
+                            overwrite: true,
+                        });
+                    }
+
+                    const lettersSectionHeight = 900;
+
+                    window.addEventListener("scroll", () => {
+                        const scrollY = window.scrollY;
+
+
+                        if (scrollY < lettersSectionHeight) {
+                            gsap.to(".logo", {
+                                opacity: 0,
+                                duration: 0.5,
+                                ease: "power1.out"
+                            });
+                        } else {
+                            gsap.to(".logo", {
+                                opacity: 1,
+                                duration: 0.5,
+                                ease: "power1.out"
+                            });
+                        }
+                    });
+
+                })
+            </script>
+</body>
+
+</html>
